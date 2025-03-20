@@ -1,4 +1,42 @@
-.middle-container {
+.header {
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-container{
   margin: 20px;
   padding: 10px;
 }
+.translation-button {
+  margin-top: 20px;
+}
+
+.cipher-key {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  gap: 10px;
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+.middle-container {
+}
+
+.letter-box input {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  box-sizing: border-box;
+}
+.unciphered-box textarea,
+.ciphered-box textarea {
+  width: 100%; 
+  height: 150px;     
+  font-size: 16px;   
+  box-sizing: border-box;
+  resize: none;  
+}
+
+

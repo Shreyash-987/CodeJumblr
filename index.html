@@ -7,50 +7,132 @@
     <title>Caeser Substitutor</title>
   </head>
   <body>
-    <div class="top-container">
+<!-- Top Container: Header and Cipher Key Inputs -->
+    <div class="header">
       <h1>Caeser Substitutor</h1>
-      <p>Substitution Key</p>
+      
+    </div>
+    <div class="top-container">
+      <p>Caeser Substitution Key</p>
       <div class="cipher-key">
-        <input type="text" name="" id="" />
-        <input type="text" name="" id="" />
-        <input type="text" name="" id="" />
-        <input type="text" name="" id="" />
-        <input type="text" name="" id="" />
-        <input type="text" name="" id="" />
-        <input type="text" name="" id="" />
-        <input type="text" name="" id="" />
-        <input type="text" name="" id="" />
-        <input type="text" name="" id="" />
-        <input type="text" name="" id="" />
-        <input type="text" name="" id="" />
-        <input type="text" name="" id="" />
-        <input type="text" name="" id="" />
-        <input type="text" name="" id="" />
-        <input type="text" name="" id="" />
-        <input type="text" name="" id="" />
-        <input type="text" name="" id="" />
-        <input type="text" name="" id="" />
-        <input type="text" name="" id="" />
-        <input type="text" name="" id="" />
-        <input type="text" name="" id="" />
-        <input type="text" name="" id="" />
-        <input type="text" name="" id="" />
-        <input type="text" name="" id="" />
-        <input type="text" name="" id="" />
+        <div class="letter-box">
+          <label for="keyA">A</label>
+          <input type="text" id="keyA" maxlength="1" title="Enter a single letter (A-Z)" oninput="this.value = this.value.toUpperCase();" />
+        </div>
+        <div class="letter-box">
+          <label for="keyB">B</label>
+          <input type="text" id="keyB" maxlength="1" title="Enter a single letter (A-Z)" oninput="this.value = this.value.toUpperCase();" />
+        </div>
+        <div class="letter-box">
+          <label for="keyC">C</label>
+          <input type="text" id="keyC" maxlength="1" title="Enter a single letter (A-Z)" oninput="this.value = this.value.toUpperCase();" />
+        </div>
+        <div class="letter-box">
+          <label for="keyD">D</label>
+          <input type="text" id="keyD" maxlength="1" title="Enter a single letter (A-Z)" oninput="this.value = this.value.toUpperCase();" />
+        </div>
+        <div class="letter-box">
+          <label for="keyE">E</label>
+          <input type="text" id="keyE" maxlength="1" title="Enter a single letter (A-Z)" oninput="this.value = this.value.toUpperCase();" />
+        </div>
+        <div class="letter-box">
+          <label for="keyF">F</label>
+          <input type="text" id="keyF" maxlength="1" title="Enter a single letter (A-Z)" oninput="this.value = this.value.toUpperCase();" />
+        </div>
+        <div class="letter-box">
+          <label for="keyG">G</label>
+          <input type="text" id="keyG" maxlength="1" title="Enter a single letter (A-Z)" oninput="this.value = this.value.toUpperCase();" />
+        </div>
+        <div class="letter-box">
+          <label for="keyH">H</label>
+          <input type="text" id="keyH" maxlength="1" title="Enter a single letter (A-Z)" oninput="this.value = this.value.toUpperCase();" />
+        </div>
+        <div class="letter-box">
+          <label for="keyI">I</label>
+          <input type="text" id="keyI" maxlength="1" title="Enter a single letter (A-Z)" oninput="this.value = this.value.toUpperCase();" />
+        </div>
+        <div class="letter-box">
+          <label for="keyJ">J</label>
+          <input type="text" id="keyJ" maxlength="1" title="Enter a single letter (A-Z)" oninput="this.value = this.value.toUpperCase();" />
+        </div>
+        <div class="letter-box">
+          <label for="keyK">K</label>
+          <input type="text" id="keyK" maxlength="1" title="Enter a single letter (A-Z)" oninput="this.value = this.value.toUpperCase();" />
+        </div>
+        <div class="letter-box">
+          <label for="keyL">L</label>
+          <input type="text" id="keyL" maxlength="1" title="Enter a single letter (A-Z)" oninput="this.value = this.value.toUpperCase();" />
+        </div>
+        <div class="letter-box">
+          <label for="keyM">M</label>
+          <input type="text" id="keyM" maxlength="1" title="Enter a single letter (A-Z)" oninput="this.value = this.value.toUpperCase();" />
+        </div>
+        <div class="letter-box">
+          <label for="keyN">N</label>
+          <input type="text" id="keyN" maxlength="1" title="Enter a single letter (A-Z)" oninput="this.value = this.value.toUpperCase();" />
+        </div>
+        <div class="letter-box">
+          <label for="keyO">O</label>
+          <input type="text" id="keyO" maxlength="1" title="Enter a single letter (A-Z)" oninput="this.value = this.value.toUpperCase();" />
+        </div>
+        <div class="letter-box">
+          <label for="keyP">P</label>
+          <input type="text" id="keyP" maxlength="1" title="Enter a single letter (A-Z)" oninput="this.value = this.value.toUpperCase();" />
+        </div>
+        <div class="letter-box">
+          <label for="keyQ">Q</label>
+          <input type="text" id="keyQ" maxlength="1" title="Enter a single letter (A-Z)" oninput="this.value = this.value.toUpperCase();" />
+        </div>
+        <div class="letter-box">
+          <label for="keyR">R</label>
+          <input type="text" id="keyR" maxlength="1" title="Enter a single letter (A-Z)" oninput="this.value = this.value.toUpperCase();" />
+        </div>
+        <div class="letter-box">
+          <label for="keyS">S</label>
+          <input type="text" id="keyS" maxlength="1" title="Enter a single letter (A-Z)" oninput="this.value = this.value.toUpperCase();" />
+        </div>
+        <div class="letter-box">
+          <label for="keyT">T</label>
+          <input type="text" id="keyT" maxlength="1" title="Enter a single letter (A-Z)" oninput="this.value = this.value.toUpperCase();" />
+        </div>
+        <div class="letter-box">
+          <label for="keyU">U</label>
+          <input type="text" id="keyU" maxlength="1" title="Enter a single letter (A-Z)" oninput="this.value = this.value.toUpperCase();" />
+        </div>
+        <div class="letter-box">
+          <label for="keyV">V</label>
+          <input type="text" id="keyV" maxlength="1" title="Enter a single letter (A-Z)" oninput="this.value = this.value.toUpperCase();" />
+        </div>
+        <div class="letter-box">
+          <label for="keyW">W</label>
+          <input type="text" id="keyW" maxlength="1" title="Enter a single letter (A-Z)" oninput="this.value = this.value.toUpperCase();" />
+        </div>
+        <div class="letter-box">
+          <label for="keyX">X</label>
+          <input type="text" id="keyX" maxlength="1" title="Enter a single letter (A-Z)" oninput="this.value = this.value.toUpperCase();" />
+        </div>
+        <div class="letter-box">
+          <label for="keyY">Y</label>
+          <input type="text" id="keyY" maxlength="1" title="Enter a single letter (A-Z)" oninput="this.value = this.value.toUpperCase();" />
+        </div>
+        <div class="letter-box">
+          <label for="keyZ">Z</label>
+          <input type="text" id="keyZ" maxlength="1" title="Enter a single letter (A-Z)" oninput="this.value = this.value.toUpperCase();" />
       </div>
     </div>
-
+ <!-- Middle Container: Message Boxes and Translation Button -->
     <div class="middle-container">
       <div class="unciphered-box">
         <p>Decoded Message</p>
-        <input type="text" name="" id="" />
+        <textarea id="decoded-message" rows="20" cols="100"></textarea>
       </div>
-
       <div class="ciphered-box">
         <p>Coded Message</p>
-        <input type="text" name="" id="" />
+        <textarea id="coded-message" rows="4" cols="50"></textarea>
       </div>
-      <button class="translator-button">Translate</button>
+      <button class="translation-button">Translate</button>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
