@@ -7,6 +7,7 @@
     <title>Caeser Substitutor</title>
   </head>
   <body>
+
 <!-- Top Container: Header and Cipher Key Inputs -->
     <div class="header">
       <h1>Caeser Substitutor</h1>
@@ -14,8 +15,8 @@
     </div>
     <div class="top-container">
       <p>Caeser Substitution Key</p>
-      <div class="cipher-key">
-        <div class="letter-box">
+      <div class="cipher-key"> <!-- Contains every key for a cipher -->
+        <div class="letter-box"> <!-- Get a char after prompt, set char to upper, rinse and repeat 25 more times -->
           <label for="keyA">A</label>
           <input type="text" id="keyA" maxlength="1" title="Enter a single letter (A-Z)" oninput="this.value = this.value.toUpperCase();" />
         </div>
@@ -120,10 +121,11 @@
           <input type="text" id="keyZ" maxlength="1" title="Enter a single letter (A-Z)" oninput="this.value = this.value.toUpperCase();" />
       </div>
     </div>
- <!-- Middle Container: Message Boxes and Translation Button -->
+ 
+<!-- Middle Container: Message Boxes and Translation Button -->
     <div class="middle-container">
       <div class="unciphered-box">
-        <p>Decoded Message</p>
+        <p>Decoded Message</p> <!-- Middle Container: Message Boxes and Translation Button -->
         <textarea id="decoded-message" rows="20" cols="100"></textarea>
       </div>
       <div class="ciphered-box">
