@@ -3,17 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>CodeJumbler</title>
+    <link rel="stylesheet" href="substyles.css" />
+    <link rel="stylesheet" href="homestyles.css">
+    <title>Substitution Cipher | CodeJumbler</title>
   </head>
   <body>
-    <!-- Top Container: Header and Cipher Key Inputs -->
-    <div class="header">
-      <h1>CodeJumbler</h1>
+    <!-- Navigation Bar -->
+    <div class="home-container">
+      <nav class="navbar">
+          <div class="nav-container">
+              <div class="logo">CodeJumbler</div>
+              <ul class="nav-links">
+                  <li class="nav-item"><a href="home.html">Home</a></li>
+                  <li class="nav-item"><a href="subcipher.html">Substitution Cipher</a></li>
+                  <li class="nav-item"><a href="shiftcipher.html">Shift Cipher</a></li>
+              </ul>                
+          </div>
+      </nav>
     </div>
-
+    <!-- Top Container: Header and Cipher Key Inputs -->
     <div class="top-container">
-      <p>Caeser Substitution Key</p>
+      <h1 class="header">Caeser Substitution Key</h1>
       <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
       <button class="generate-button" onclick="generate()">Generate Random Key</button>
 
@@ -35,6 +45,6 @@
       </div>
       <button class="translation-button" onclick="encrypt()">Encrypt</button>
     </div>
-    <script src="script.js"></script>
+    <script src="subScript.js"></script>
   </body>
 </html>
