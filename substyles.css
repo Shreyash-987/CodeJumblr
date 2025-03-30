@@ -46,4 +46,23 @@
   resize: none;  
 }
 
+.middle-container, .decryption-container, 
+.top-container, .cipher-key {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  margin: 0 auto; 
+  text-align: center;
+}
+
+.divider {
+  margin: 30px;
+}
+
+.translation-button {
+  margin: 30px;
+  font-size: 30px;
+  padding: 2%;
+}
 
