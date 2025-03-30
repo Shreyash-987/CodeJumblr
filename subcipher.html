@@ -20,7 +20,7 @@
             <img src="images/CodeJumbler croc.png" />
           </div>
           <ul class="nav-links">
-            <li class="nav-item"><a href="home.html">Home</a></li>
+            <li class="nav-item"><a href="index.html">Home</a></li>
             <li class="nav-item">
               <a href="subcipher.html">Substitution Cipher</a>
             </li>
@@ -33,12 +33,14 @@
     </div>
     <!-- Top Container: Header and Cipher Key Inputs -->
     <div class="top-container">
-      <h1 class="header">Substitution Cipher Key</h1>
+      <h1 class="header">Substitution Cipher Encryptor & Decryptor</h1>
       <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+      <!--Key Generator -->
+      <p>Click to Automatically Generate a Random Key!</p>
       <button class="generate-button" onclick="generate()">
         Generate Random Key
       </button>
-      <p>Input exactly 26 unique alphabetical letters for your key!</p>
+      <p>Or Input exactly 26 unique alphabetical letters for your key!</p>
       <div class="cipher-key">
         <textarea
           id="cipher-key"
@@ -51,10 +53,11 @@ ABCDEFGHIJKLMNOPQRSTUVWXYZ</textarea
         >
       </div>
     </div>
+    <hr class="divider" />
 
     <!-- Middle Container: Message Boxes and Translation Button -->
     <div class="middle-container">
-      <h2>Substitution Cipher Encryptor</h2>
+      <h2 class="title-text">Substitution Cipher Encryptor</h2>
       <div class="unciphered-box">
         <p>Decoded Message</p>
         <textarea
@@ -66,15 +69,16 @@ ABCDEFGHIJKLMNOPQRSTUVWXYZ</textarea
       </div>
       <div class="ciphered-box">
         <p>Coded Message</p>
-        <textarea id="coded-message" rows="10" cols="100" readonly></textarea>
+        <textarea id="coded-message" rows="10" cols="100" readonly placeholder="Your encrypted message will appear here..."></textarea>
       </div>
       <button class="translation-button" onclick="encrypt()">Encrypt</button>
     </div>
+
     <hr class="divider" />
 
     <!-- Dedicated Decryption Section -->
     <div class="decryption-container">
-      <h2>Substitution Cipher Decryptor</h2>
+      <h2 class="title-text">Substitution Cipher Decryptor</h2>
       <div class="decrypt-input-box">
         <p>Encrypted Message</p>
         <textarea
@@ -91,6 +95,7 @@ ABCDEFGHIJKLMNOPQRSTUVWXYZ</textarea
           rows="10"
           cols="100"
           readonly
+          placeholder="Your decrypted message will appear here..."
         ></textarea>
       </div>
       <button class="translation-button" onclick="decrypt()">Decrypt</button>

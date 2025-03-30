@@ -20,7 +20,7 @@
             <img src="images/CodeJumbler croc.png" />
           </div>
           <ul class="nav-links">
-            <li class="nav-item"><a href="home.html">Home</a></li>
+            <li class="nav-item"><a href="index.html">Home</a></li>
             <li class="nav-item">
               <a href="subcipher.html">Substitution Cipher</a>
             </li>
@@ -30,9 +30,9 @@
           </ul>
         </div>
       </nav>
-      <!-- Top Container: Header and Cipher Key Inputs -->
+      <!-- Cipher Key -->
       <section class="top-container">
-        <h1 class="header">Shift Cipher Key</h1>
+        <h1 class="header">Shift Cipher Encryptor & Decryptor</h1>
 
         <div class="cipher-key">
           <p>Input Numbers (0-26):</p>
@@ -51,10 +51,10 @@
           </p>
         </div>
       </section>
-
-      <!-- Middle Container: Message Boxes and Translation Button -->
+      <hr class="divider" />
+      <!-- Encryptor -->
       <div class="middle-container">
-        <h2>Shift Cipher Encryptor</h2>
+        <h2 class="title-text">Shift Cipher Encryptor</h2>
         <div class="unciphered-box">
           <p>Decoded Message</p>
           <textarea
@@ -66,7 +66,7 @@
         </div>
         <div class="ciphered-box">
           <p>Coded Message</p>
-          <textarea id="coded-message" rows="20" cols="100" readonly></textarea>
+          <textarea id="coded-message" rows="20" cols="100" readonly placeholder="Your encrypted message will appear here..."></textarea>
         </div>
         <button class="translation-button" onclick="encrypt()">Encrypt</button>
       </div>
@@ -74,10 +74,10 @@
     <hr class="divider" />
     <!-- Decryptor -->
     <section class="decryption-section">
-      <h2>Shift Cipher Decryptor</h2>
+      <h2 class="title-text">Shift Cipher Decryptor</h2>
       <div class="message-boxes">
         <div class="ciphered-box">
-          <label for="ciphered-text-decrypt">Coded Message</label>
+          <p for="ciphered-text-decrypt">Coded Message</p>
           <textarea
             id="ciphered-text-decrypt"
             rows="10"
@@ -86,7 +86,7 @@
           ></textarea>
         </div>
         <div class="unciphered-box">
-          <label for="decrypted-message">Decoded Message</label>
+          <p for="decrypted-message">Decoded Message</p>
           <textarea
             id="decrypted-message"
             rows="10"

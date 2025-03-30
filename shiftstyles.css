@@ -5,8 +5,8 @@
 }
 
 .header {
-  font-size: 30px;
-  margin: 30px;
+  font-size: 50px;
+  margin: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,4 +64,9 @@
   margin: 30px;
   font-size: 30px;
   padding: 2%;
+  font-weight: bold;
+}
+
+.title-text {
+  font-size: 30px;
 }

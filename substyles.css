@@ -5,8 +5,9 @@
 }
 
 .header {
-  font-size: 30px;
-  margin: 30px;
+  font-size: 50px;
+  margin-top: 70px;
+  margin-bottom: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -74,5 +75,17 @@
   margin: 30px;
   font-size: 30px;
   padding: 2%;
+  font-weight: bold;
 }
 
+.ciphered-text-decrypt, .decrypted-message {
+  font-size: 10px;
+}
+
+.generate-button {
+  font-size: 20px;
+}
+
+.title-text {
+  font-size: 30px;
+}

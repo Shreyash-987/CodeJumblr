@@ -14,12 +14,13 @@ body{
 }
 
 img{
-    width: 150px;
+    width: 130px;
+    margin-left: 30px;
 }
 
 
 .navbar {
-    padding: 20px 40px;
+    padding: 10px 40px;
     background: linear-gradient(to right,
     hsl(110, 21%, 32%),
     hsl(110, 21%, 35%),
@@ -51,11 +52,14 @@ img{
     margin-left: 30px;
 }
 
+
 a{
     color: var(--textcolor);
     font-family: var(--fontfam);
     text-decoration: none;
-    font-size: 20px;
+    font-size: 30px;
+    font-weight: 500;
+    margin-right: 30px;
 }
 
 .about{
