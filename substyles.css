@@ -34,6 +34,7 @@
   text-align: center;
   box-sizing: border-box;
 }
+
 .unciphered-box textarea,
 .ciphered-box textarea {
   width: 100%; 

@@ -8,6 +8,52 @@
     <title>Shift Cipher | CodeJumbler</title>
 </head>
 <body>
+    <!-- Navigation Bar -->
+    <div class="home-container">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">CodeJumbler</div>
+                <ul class="nav-links">
+                    <li class="nav-item"><a href="home.html">Home</a></li>
+                    <li class="nav-item"><a href="subcipher.html">Substitution Cipher</a></li>
+                    <li class="nav-item"><a href="shiftcipher.html">Shift Cipher</a></li>
+                </ul>                
+            </div>
+        </nav>
+    </div>
+    <!-- Top Container: Header and Cipher Key Inputs -->
+    <section class="top-container">
+        <h1 class="header">Shift Cipher Key</h1>
+        <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+  
+        <div class="cipher-key">
+          <label for="cipher-key">Enter shift value:</label>
+          <input 
+            type="number" 
+            id="cipher-key" 
+            class="cipher-key-box" 
+            placeholder="e.g., 3" 
+            min="1" 
+            max="25"
+          />
+        </div> 
+      </section>
+
+    
+    <!-- Middle Container: Message Boxes and Translation Button -->
+     <div class="middle-container">
+        <div class="middle-container">
+            <div class="unciphered-box">
+              <p>Decoded Message</p> 
+              <textarea id="decoded-text" rows="20" cols="100" placeholder="Enter your message..."></textarea>
+            </div>
+            <div class="ciphered-box">
+              <p>Coded Message</p>
+              <textarea id="coded-message" rows="20" cols="100" readonly></textarea>
+            </div>
+            <button class="translation-button" onclick="encrypt()">Encrypt</button>
+          </div>
+     </div>
     <script src="shiftScript.js"></script>
 </body>
 </html>
