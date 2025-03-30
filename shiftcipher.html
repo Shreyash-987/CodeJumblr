@@ -24,9 +24,9 @@
     <!-- Top Container: Header and Cipher Key Inputs -->
     <section class="top-container">
         <h1 class="header">Shift Cipher Key</h1>
-        <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
   
         <div class="cipher-key">
+          <p>Input Numbers (0-26):</p>
           <label for="cipher-key">Enter shift value:</label>
           <input 
             type="number" 
@@ -36,24 +36,52 @@
             min="1" 
             max="25"
           />
+          <p>Shifts the alphabet over to the right by 'n' (Shift Value) amount of times to the right.</p>
         </div> 
       </section>
 
     
     <!-- Middle Container: Message Boxes and Translation Button -->
      <div class="middle-container">
-        <div class="middle-container">
-            <div class="unciphered-box">
-              <p>Decoded Message</p> 
-              <textarea id="decoded-text" rows="20" cols="100" placeholder="Enter your message..."></textarea>
-            </div>
-            <div class="ciphered-box">
-              <p>Coded Message</p>
-              <textarea id="coded-message" rows="20" cols="100" readonly></textarea>
-            </div>
-            <button class="translation-button" onclick="encrypt()">Encrypt</button>
-          </div>
+        <h2>Shift Cipher Encryptor</h2>
+        <div class="unciphered-box">
+            <p>Decoded Message</p> 
+            <textarea id="decoded-text" rows="20" cols="100" placeholder="Enter your message..."></textarea>
+        </div>
+        <div class="ciphered-box">
+            <p>Coded Message</p>
+            <textarea id="coded-message" rows="20" cols="100" readonly></textarea>
+        </div>
+        <button class="translation-button" onclick="encrypt()">Encrypt</button>
+        </div>
      </div>
+
+    <!-- Decryptor -->
+    <section class="decryption-section">
+        <h2>Shift Cipher Decryptor</h2>
+        <div class="message-boxes">
+        <div class="ciphered-box">
+            <label for="ciphered-text-decrypt">Coded Message</label>
+            <textarea 
+            id="ciphered-text-decrypt" 
+            rows="10" 
+            cols="100" 
+            placeholder="Enter the coded message..."
+            ></textarea>
+        </div>
+        <div class="unciphered-box">
+            <label for="decrypted-message">Decoded Message</label>
+            <textarea 
+            id="decrypted-message" 
+            rows="10" 
+            cols="100" 
+            placeholder="Your decrypted message will appear here..."
+            readonly
+            ></textarea>
+        </div>
+        </div>
+        <button class="translation-button" onclick="decrypt()">Decrypt</button>
+    </section>
     <script src="shiftScript.js"></script>
 </body>
 </html>

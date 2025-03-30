@@ -26,7 +26,7 @@
       <h1 class="header">Substitution Cipher Key</h1>
       <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
       <button class="generate-button" onclick="generate()">Generate Random Key</button>
-
+      <p>Input exactly 26 unique alphabetical letters for your key!</p>
       <div class="cipher-key">
         <textarea id="cipher-key" class="cipher-key-box" rows="1" cols="100" maxlength="26" >ABCDEFGHIJKLMNOPQRSTUVWXYZ</textarea>
       </div> 
@@ -35,15 +35,30 @@
 
     <!-- Middle Container: Message Boxes and Translation Button -->
     <div class="middle-container">
+      <h2>Substitution Cipher Encryptor</h2>
       <div class="unciphered-box">
         <p>Decoded Message</p> 
-        <textarea id="decoded-text" rows="20" cols="100" placeholder="Enter your message..."></textarea>
+        <textarea id="decoded-text" rows="10" cols="100" placeholder="Enter your message..."></textarea>
       </div>
       <div class="ciphered-box">
         <p>Coded Message</p>
-        <textarea id="coded-message" rows="20" cols="100" readonly></textarea>
+        <textarea id="coded-message" rows="10" cols="100" readonly></textarea>
       </div>
       <button class="translation-button" onclick="encrypt()">Encrypt</button>
+    </div>
+
+    <!-- Dedicated Decryption Section -->
+    <div class="dedicated-decryption-container">
+      <h2>Substitution Cipher Decryptor</h2>
+      <div class="decrypt-input-box">
+        <p>Encrypted Message</p> 
+        <textarea id="dedicated-cipher" rows="10" cols="100" placeholder="Paste encrypted message here..."></textarea>
+      </div>
+      <div class="decrypt-output-box">
+        <p>Decrypted Message</p>
+        <textarea id="dedicated-decode" rows="10" cols="100" readonly></textarea>
+      </div>
+      <button class="translation-button" onclick="decrypt()">Decrypt</button>
     </div>
     <script src="subScript.js"></script>
   </body>

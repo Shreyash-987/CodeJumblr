@@ -1,3 +1,4 @@
+// Encryptor Function
 function encrypt() {
     const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
@@ -43,7 +44,53 @@ function encrypt() {
     outputArea.value = encrypted; // Outputs the newly made encrypted string ont the outputArea element.
   }
 
-  // Generates a randomized cipher key with unique letters.
+  // Decryptor Function
+  function decrypt() {  
+    const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  
+    // Use the same key for decryption
+    const key = document.getElementById("cipher-key").value.toUpperCase();
+    // Get encrypted message from the dedicated decryption box
+    const input = document.getElementById("dedicated-cipher").value.toUpperCase();
+    const outputArea = document.getElementById("dedicated-decode");
+  
+    // Validate key length and content
+    if (key.length !== 26) {
+      outputArea.value = "Key must be exactly 26 letters.";
+      return;
+    }
+  
+    let letters = {};
+    for (let i = 0; i < key.length; i++) { 
+      let char = key[i];
+      if (char < 'A' || char > 'Z') {
+        outputArea.value = "Key must only contain letters A–Z.";
+        return;
+      }
+      if (letters[char]) {
+        outputArea.value = "Key must not have repeated letters.";
+        return;
+      }
+      letters[char] = true;
+    }
+    
+    // Decrypt using the dedicated text box values
+    // Essentially does the process of encryption but backwards.
+    let decrypted = "";
+    for (let i = 0; i < input.length; i++) {
+      let char = input[i];
+      if (key.includes(char)) {
+        let index = key.indexOf(char);
+        decrypted += alphabet[index];
+      } else { 
+        decrypted += char;
+      }
+    }
+    
+    outputArea.value = decrypted;
+  }
+
+  // Random Cipher Key Generator Function
   function generate() {
     const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split(""); // Splits the string into an array containing each individual letter.
     let shuffled = []; // initializes unshuffled list.
