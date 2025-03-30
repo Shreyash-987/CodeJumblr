@@ -1,9 +1,16 @@
+:root {
+  --fontfam: 'Poppins';
+  --themecolor: hsl(110, 21%, 35%);
+  --textcolor: white;
+}
+
 .header {
   font-size: 30px;
   margin: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: var(--fontfam);
 }
 
 .top-container{
@@ -20,6 +27,7 @@
   gap: 10px;
   margin-top: 1rem;
   justify-content: center;
+  font-family: var(--fontfam);
 }
 
 .cipher-key-box {
@@ -44,6 +52,7 @@
   font-size: 16px;   
   box-sizing: border-box;
   resize: none;  
+  font-family: var(--fontfam);
 }
 
 .middle-container, .decryption-container, 
@@ -54,6 +63,7 @@
   justify-content: center; 
   margin: 0 auto; 
   text-align: center;
+  font-family: var(--fontfam);
 }
 
 .divider {

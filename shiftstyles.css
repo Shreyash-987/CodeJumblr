@@ -1,24 +1,67 @@
+:root {
+  --fontfam: 'Poppins';
+  --themecolor: hsl(110, 21%, 35%);
+  --textcolor: white;
+}
+
 .header {
-    font-size: 30px;
-    margin: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  font-size: 30px;
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--fontfam);
   
+}
 
+.top-container {
+  margin: 20px;
+  padding: 10px;
+}
 
-  .cipher-key-box {
-    resize: none;
-    overflow: hidden;
-    width: 300px;
-  }
+.cipher-key-box {
+  resize: none;
+  overflow: hidden;
+  width: 300px;
+}
 
-  .unciphered-box textarea,
-.ciphered-box textarea {
-  width: 50%; 
-  height: 150px;     
-  font-size: 16px;   
+.cipher-key{
+  font-family: var(--fontfam);
+}
+
+.unciphered-box textarea,
+.ciphered-box textarea,
+.decrypt-input-box textarea,
+.decrypt-output-box textarea {
+  width: 100%;
+  height: 150px;
+  font-size: 16px;
   box-sizing: border-box;
-  resize: none;  
+  resize: none;
+  font-family: var(--fontfam);
+}
+
+.divider {
+  margin: 30px;
+}
+
+.middle-container,
+.decryption-section,
+.top-cntainer,
+.cipher-key {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+  font-family: var(--fontfam);
+  font-size: 16px;
+}
+
+
+.translation-button {
+  margin: 30px;
+  font-size: 30px;
+  padding: 2%;
 }
