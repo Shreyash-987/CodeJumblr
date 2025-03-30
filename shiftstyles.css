@@ -16,7 +16,7 @@
 
   .unciphered-box textarea,
 .ciphered-box textarea {
-  width: 100%; 
+  width: 50%; 
   height: 150px;     
   font-size: 16px;   
   box-sizing: border-box;
