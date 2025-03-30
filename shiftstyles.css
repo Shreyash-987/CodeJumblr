@@ -6,10 +6,7 @@
     align-items: center;
   }
   
-  .top-container{
-    margin: 20px;
-    padding: 10px;
-  }
+
 
   .cipher-key-box {
     resize: none;

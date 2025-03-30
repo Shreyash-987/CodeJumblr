@@ -4,41 +4,65 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="substyles.css" />
-    <link rel="stylesheet" href="homestyles.css">
+    <link rel="stylesheet" href="homestyles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>Substitution Cipher | CodeJumbler</title>
   </head>
   <body>
     <!-- Navigation Bar -->
     <div class="home-container">
       <nav class="navbar">
-          <div class="nav-container">
-              <div class="logo">CodeJumbler</div>
-              <ul class="nav-links">
-                  <li class="nav-item"><a href="home.html">Home</a></li>
-                  <li class="nav-item"><a href="subcipher.html">Substitution Cipher</a></li>
-                  <li class="nav-item"><a href="shiftcipher.html">Shift Cipher</a></li>
-              </ul>                
+        <div class="nav-container">
+          <div class="logo">
+            <img src="images/CodeJumbler croc.png" />
           </div>
+          <ul class="nav-links">
+            <li class="nav-item"><a href="home.html">Home</a></li>
+            <li class="nav-item">
+              <a href="subcipher.html">Substitution Cipher</a>
+            </li>
+            <li class="nav-item">
+              <a href="shiftcipher.html">Shift Cipher</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </div>
     <!-- Top Container: Header and Cipher Key Inputs -->
     <div class="top-container">
       <h1 class="header">Substitution Cipher Key</h1>
       <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
-      <button class="generate-button" onclick="generate()">Generate Random Key</button>
+      <button class="generate-button" onclick="generate()">
+        Generate Random Key
+      </button>
       <p>Input exactly 26 unique alphabetical letters for your key!</p>
       <div class="cipher-key">
-        <textarea id="cipher-key" class="cipher-key-box" rows="1" cols="100" maxlength="26" >ABCDEFGHIJKLMNOPQRSTUVWXYZ</textarea>
-      </div> 
-
+        <textarea
+          id="cipher-key"
+          class="cipher-key-box"
+          rows="1"
+          cols="100"
+          maxlength="26"
+        >
+ABCDEFGHIJKLMNOPQRSTUVWXYZ</textarea
+        >
+      </div>
     </div>
 
     <!-- Middle Container: Message Boxes and Translation Button -->
     <div class="middle-container">
       <h2>Substitution Cipher Encryptor</h2>
       <div class="unciphered-box">
-        <p>Decoded Message</p> 
-        <textarea id="decoded-text" rows="10" cols="100" placeholder="Enter your message..."></textarea>
+        <p>Decoded Message</p>
+        <textarea
+          id="decoded-text"
+          rows="10"
+          cols="100"
+          placeholder="Enter your message..."
+        ></textarea>
       </div>
       <div class="ciphered-box">
         <p>Coded Message</p>
@@ -51,12 +75,22 @@
     <div class="dedicated-decryption-container">
       <h2>Substitution Cipher Decryptor</h2>
       <div class="decrypt-input-box">
-        <p>Encrypted Message</p> 
-        <textarea id="dedicated-cipher" rows="10" cols="100" placeholder="Paste encrypted message here..."></textarea>
+        <p>Encrypted Message</p>
+        <textarea
+          id="dedicated-cipher"
+          rows="10"
+          cols="100"
+          placeholder="Paste encrypted message here..."
+        ></textarea>
       </div>
       <div class="decrypt-output-box">
         <p>Decrypted Message</p>
-        <textarea id="dedicated-decode" rows="10" cols="100" readonly></textarea>
+        <textarea
+          id="dedicated-decode"
+          rows="10"
+          cols="100"
+          readonly
+        ></textarea>
       </div>
       <button class="translation-button" onclick="decrypt()">Decrypt</button>
     </div>

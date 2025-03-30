@@ -1,87 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="shiftstyles.css">
-    <link rel="stylesheet" href="homestyles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="shiftstyles.css" />
+    <link rel="stylesheet" href="homestyles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>Shift Cipher | CodeJumbler</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Navigation Bar -->
     <div class="home-container">
-        <nav class="navbar">
-            <div class="nav-container">
-                <div class="logo">CodeJumbler</div>
-                <ul class="nav-links">
-                    <li class="nav-item"><a href="home.html">Home</a></li>
-                    <li class="nav-item"><a href="subcipher.html">Substitution Cipher</a></li>
-                    <li class="nav-item"><a href="shiftcipher.html">Shift Cipher</a></li>
-                </ul>                
-            </div>
-        </nav>
-    </div>
-    <!-- Top Container: Header and Cipher Key Inputs -->
-    <section class="top-container">
+      <nav class="navbar">
+        <div class="nav-container">
+          <div class="logo">
+            <img src="images/CodeJumbler croc.png" />
+          </div>
+          <ul class="nav-links">
+            <li class="nav-item"><a href="home.html">Home</a></li>
+            <li class="nav-item">
+              <a href="subcipher.html">Substitution Cipher</a>
+            </li>
+            <li class="nav-item">
+              <a href="shiftcipher.html">Shift Cipher</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Top Container: Header and Cipher Key Inputs -->
+      <section class="top-container">
         <h1 class="header">Shift Cipher Key</h1>
-  
+
         <div class="cipher-key">
           <p>Input Numbers (0-26):</p>
           <label for="cipher-key">Enter shift value:</label>
-          <input 
-            type="number" 
-            id="cipher-key" 
-            class="cipher-key-box" 
-            placeholder="e.g., 3" 
-            min="1" 
+          <input
+            type="number"
+            id="cipher-key"
+            class="cipher-key-box"
+            placeholder="e.g., 3"
+            min="1"
             max="25"
           />
-          <p>Shifts the alphabet over to the right by 'n' (Shift Value) amount of times to the right.</p>
-        </div> 
+          <p>
+            Shifts the alphabet over to the right by 'n' (Shift Value) amount of
+            times to the right.
+          </p>
+        </div>
       </section>
 
-    
-    <!-- Middle Container: Message Boxes and Translation Button -->
-     <div class="middle-container">
+      <!-- Middle Container: Message Boxes and Translation Button -->
+      <div class="middle-container">
         <h2>Shift Cipher Encryptor</h2>
         <div class="unciphered-box">
-            <p>Decoded Message</p> 
-            <textarea id="decoded-text" rows="20" cols="100" placeholder="Enter your message..."></textarea>
+          <p>Decoded Message</p>
+          <textarea
+            id="decoded-text"
+            rows="20"
+            cols="100"
+            placeholder="Enter your message..."
+          ></textarea>
         </div>
         <div class="ciphered-box">
-            <p>Coded Message</p>
-            <textarea id="coded-message" rows="20" cols="100" readonly></textarea>
+          <p>Coded Message</p>
+          <textarea id="coded-message" rows="20" cols="100" readonly></textarea>
         </div>
         <button class="translation-button" onclick="encrypt()">Encrypt</button>
-        </div>
-     </div>
+      </div>
+    </div>
 
     <!-- Decryptor -->
     <section class="decryption-section">
-        <h2>Shift Cipher Decryptor</h2>
-        <div class="message-boxes">
+      <h2>Shift Cipher Decryptor</h2>
+      <div class="message-boxes">
         <div class="ciphered-box">
-            <label for="ciphered-text-decrypt">Coded Message</label>
-            <textarea 
-            id="ciphered-text-decrypt" 
-            rows="10" 
-            cols="100" 
+          <label for="ciphered-text-decrypt">Coded Message</label>
+          <textarea
+            id="ciphered-text-decrypt"
+            rows="10"
+            cols="100"
             placeholder="Enter the coded message..."
-            ></textarea>
+          ></textarea>
         </div>
         <div class="unciphered-box">
-            <label for="decrypted-message">Decoded Message</label>
-            <textarea 
-            id="decrypted-message" 
-            rows="10" 
-            cols="100" 
+          <label for="decrypted-message">Decoded Message</label>
+          <textarea
+            id="decrypted-message"
+            rows="10"
+            cols="100"
             placeholder="Your decrypted message will appear here..."
             readonly
-            ></textarea>
+          ></textarea>
         </div>
-        </div>
-        <button class="translation-button" onclick="decrypt()">Decrypt</button>
+      </div>
+      <button class="translation-button" onclick="decrypt()">Decrypt</button>
     </section>
     <script src="shiftScript.js"></script>
-</body>
+  </body>
 </html>

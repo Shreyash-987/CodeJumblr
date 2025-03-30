@@ -1,15 +1,43 @@
+:root{
+    --fontfam: 'Poppins';
+    --themecolor:  hsl(110, 21%, 35%);
+    --textcolor: white;
+    }
+
+body{
+    background-color: hsl(45, 38%, 94%);
+}
 .nav-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
+img{
+    width: 150px;
+}
+
+
 .navbar {
     padding: 20px 40px;
+    background: linear-gradient(to right,
+    hsl(110, 21%, 32%),
+    hsl(110, 21%, 35%),
+    hsl(110, 21%, 38%));
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: -10px;
 }
 
 .logo {
-    font-size: 50px;
+    margin-left: -20px;
+}
+
+.header-text{
+    font-family: var(--fontfam);
+    font-size: 100px;
+    text-align: center;
+    margin-top: 100px;
 }
 
 .nav-links {
@@ -21,4 +49,33 @@
 .nav-item {
     display: inline-block;
     margin-left: 30px;
+}
+
+a{
+    color: var(--textcolor);
+    font-family: var(--fontfam);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.about{
+    display: flex;
+    border-top: solid;
+    border-radius: 10px;
+    margin: 30px;
+    padding: 20px;
+    max-width: fit-content;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--fontfam);
+    box-shadow: 1px 3px 10px;
+    border-color: var(--themecolor)
+}
+
+p{
+    font-size: 20px;
 }
