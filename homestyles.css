@@ -74,6 +74,7 @@ a{
     margin-right: auto;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
     align-items: center;
     font-family: var(--fontfam);
     box-shadow: 1px 3px 10px;
