@@ -1,3 +1,4 @@
-# Cryptographic-Encrypter-Decrypter
+# CodeJumblr
+A message encryption and decryption website developed by Zaine Ancheta, Farshad Islam, Shreyash Gajurel, & Jacob Baggott
 
-A message encryption and decryption website called CodeJumblr.
+Features a Substitution Ciper, Shift Cipher, and Text Modifer cyrptography tools. 
