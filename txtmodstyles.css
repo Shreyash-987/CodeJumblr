@@ -1,0 +1,124 @@
+:root {
+    --fontfam: 'Poppins';
+    --themecolor: hsl(110, 21%, 35%);
+    --textcolor: white;
+  }
+  
+  .header {
+    font-size: 50px;
+    margin-top: 70px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: var(--fontfam);
+  }
+  
+  .top-container,
+  .modifier-inputs,
+  .ciphered-box,
+  .output-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    font-family: var(--fontfam);
+    width: 80%;
+    margin-bottom: 30px;
+  }
+  
+  textarea,
+  input {
+    font-size: 16px;
+    width: 100%;
+    font-family: var(--fontfam);
+    padding: 10px;
+    margin-top: 10px;
+    box-sizing: border-box;
+  }
+  
+  .translation-button {
+    margin: 20px;
+    font-size: 20px;
+    padding: 10px 30px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .how-it-works {
+    display: flex;
+    border-top: solid;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px 20px;
+    width: 60%;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-family: var(--fontfam);
+    box-shadow: 1px 3px 10px;
+    border-color: var(--themecolor);
+  }
+  
+  .how-it-works p {
+    font-size: 15px;
+  }
+
+  .middle-container,
+.unciphered-box,
+.ciphered-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+  font-family: var(--fontfam);
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+textarea,
+input[type="text"] {
+  width: 80%;
+  height: 150px;
+  font-size: 16px;
+  box-sizing: border-box;
+  resize: none;
+  font-family: var(--fontfam);
+  padding: 10px;
+}
+
+input[type="text"] {
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.translation-button {
+  margin: 30px;
+  font-size: 30px;
+  padding: 2%;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.title-text {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.clear-button {
+  font-size: 16px;
+  padding: 6px 20px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  border-radius: 4px;
+}

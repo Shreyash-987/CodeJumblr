@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="txtmodstyles.css" />
+  <link rel="stylesheet" href="homestyles.css" />
+  <link rel="icon" href="images/CodeJumbler croc.png" />
+  <title>Text Modifier | CodeJumbler</title>
+  <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+  <div class="home-container">
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <img src="images/CodeJumbler croc.png" />
+        </div>
+        <ul class="nav-links">
+          <li class="nav-item"><a href="index.html">Home</a></li>
+          <li class="nav-item"><a href="subcipher.html">Substitution Cipher</a></li>
+          <li class="nav-item"><a href="shiftcipher.html">Shift Cipher</a></li>
+          <li class="nav-item"><a href="txtmod.html">Text Modifier</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="top-container">
+      <h1 class="header">Text Modification Encryption</h1>
+      <div class="how-it-works">
+        <h2>How it Works</h2>
+        <p>
+            <strong> Welcome to the Text Modifier tool!</strong>
+            This tool allows you to remove specific letters from any sentence or phrase with precision and ease. 
+            The Text Modifier provides a unique way to transform text by letting users choose exactly which character, or characters, to eliminate. 
+            Enter your sentence, specify one or more letters to remove, click *Modify Text*, and instantly receive your encrypted message. 
+            Whether you’re encrypting a secret message, censoring characters, or experimenting with formatting, the Text Modifier offers a fast, customizable solution. 
+            Use the Text Modifier tool to filter, clean, and control your text today!
+        </p>
+      </div>
+
+      <div class="middle-container">
+        <h2 class="title-text">Text Modification</h2>
+
+        <button class="clear-button" id="clear-button">*Clear Text*</button>
+    
+        <div class="unciphered-box">
+          <p>Enter characters to remove (e.g., lo):</p>
+          <input
+            type="text"
+            id="remove-chars"
+            class="cipher-key-box"
+            placeholder="Enter letters to remove..."
+          />
+        </div>
+    
+        <div class="unciphered-box">
+          <p>Input Text to Modify:</p>
+          <textarea
+            id="input-text"
+            rows="10"
+            cols="100"
+            placeholder="Enter your message..."
+          ></textarea>
+        </div>
+    
+        <div class="ciphered-box">
+          <p>Modified Output:</p>
+          <textarea
+            id="modified-text"
+            rows="10"
+            cols="100"
+            readonly
+            placeholder="Modified sentence will appear here..."
+          ></textarea>
+        </div>
+    
+        <button class="translation-button" id="modify-button">Modify Text</button>
+      </div>
+    </section>
+  </div>
+
+  <script src="txtmodScript.js"></script>
+</body>
+</html>
