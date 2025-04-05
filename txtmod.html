@@ -13,7 +13,7 @@
     />
 </head>
 <body>
-  <div class="home-container">
+  <div class="home-container"> <!-- All the basic header stuff -->
     <nav class="navbar">
       <div class="nav-container">
         <div class="logo">
@@ -55,7 +55,7 @@
             id="remove-chars"
             class="cipher-key-box"
             placeholder="Enter letters to remove..."
-          />
+          /> <!-- All letters that are meant to be removed will fall within this textbox -->
         </div>
     
         <div class="unciphered-box">
@@ -64,8 +64,8 @@
             id="input-text"
             rows="10"
             cols="100"
-            placeholder="Enter your message..."
-          ></textarea>
+            placeholder="Enter your message..." 
+          ></textarea> <!-- Message meant to be modified falls here -->
         </div>
     
         <div class="ciphered-box">
@@ -75,11 +75,11 @@
             rows="10"
             cols="100"
             readonly
-            placeholder="Modified sentence will appear here..."
-          ></textarea>
+            placeholder="Modified sentence will appear here..." 
+          ></textarea> <!-- After the letters have been removed, the modified message will be displayed here-->
         </div>
     
-        <button class="translation-button" id="modify-button">Modify Text</button>
+        <button class="translation-button" id="modify-button">Modify Text</button> <!-- This button actually performs the modification -->
       </div>
     </section>
   </div>
